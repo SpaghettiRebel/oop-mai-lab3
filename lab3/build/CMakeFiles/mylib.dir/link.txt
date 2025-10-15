@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libmylib.a CMakeFiles/mylib.dir/src/figure.cpp.o CMakeFiles/mylib.dir/src/triangle.cpp.o CMakeFiles/mylib.dir/src/square.cpp.o CMakeFiles/mylib.dir/src/rectangle.cpp.o
+/usr/bin/ranlib lib/libmylib.a
