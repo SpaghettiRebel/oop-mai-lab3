@@ -5,5 +5,6 @@
 Исполняемые файлы для лежат в директории build/bin
 
 Вариант №25
+
 <img width="658" height="27" alt="image" src="https://github.com/user-attachments/assets/52316b8f-ae94-4ec4-af10-68b0835ddf95" />
 
