@@ -29,7 +29,6 @@ void Rectangle::read(std::istream &is) {
   for (int i = 0; i < 4; ++i)
     is >> pts[i].x >> pts[i].y;
 
-  // Найди экстремальные значения x и y:
   double min_x = pts[0].x, max_x = pts[0].x;
   double min_y = pts[0].y, max_y = pts[0].y;
   for (const auto &pt : pts) {
