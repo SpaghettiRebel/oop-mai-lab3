@@ -11,6 +11,7 @@ set(BIN_DIR ${CMAKE_BINARY_DIR}/bin)
 
 # Библиотека mylib: перечисляем все .cpp с реализациями
 add_library(mylib STATIC
+    ${SRC_DIR}/array.cpp
     ${SRC_DIR}/figure.cpp
     ${SRC_DIR}/triangle.cpp
     ${SRC_DIR}/square.cpp

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/include -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/include -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -std=c++17
 

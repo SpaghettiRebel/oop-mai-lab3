@@ -3,29 +3,62 @@
 #include <iomanip>
 #include <stdexcept>
 
-Point Triangle::center() const { return c; }
+Triangle::Triangle() : ll{0, 0}, u{0, 1}, rl{1, 0} {}
 
-double Triangle::area() const { return std::sqrt(3.0) / 4.0 * side * side; }
+Triangle::Triangle(Point ll_, Point u_, Point rl_) : ll(ll_), u(u_), rl(rl_) {
+  if (!isValidTriangle())
+    throw std::invalid_argument(
+        "Введены неправильные координаты вершин треугольника");
+}
+
+Point Triangle::center() const {
+  return Point{(ll.x + u.x + rl.x) / 3, (ll.y + u.y + rl.y) / 3};
+}
+
+double Triangle::distance(const Point &a, const Point &b) const {
+  return std::hypot(a.x - b.x, a.y - b.y);
+}
+
+double Triangle::area() const {
+  double a = distance(ll, u);
+  double b = distance(u, rl);
+  double c = distance(rl, ll);
+  double s = (a + b + c) / 2;
+  return std::sqrt(s * (s - a) * (s - b) * (s - c));
+}
 
 void Triangle::print(std::ostream &os) const {
-  const double PI = M_PI;
-  double R = side / std::sqrt(3.0);
-
-  os << "Треугольник\n" << " Координаты вершин: ";
-
-  for (int i = 0; i < 3; ++i) {
-    double ang = -PI / 2 + i * (2.0 * PI / 3.0);
-    double vx = c.x + R * std::cos(ang);
-    double vy = c.y + R * std::sin(ang);
-    os << "(" << vx << "," << vy << ") ";
-  }
+  os << "Треугольник("
+     << "(" << ll.x << "," << ll.y << "), "
+     << "(" << u.x << "," << u.y << "), "
+     << "(" << rl.x << "," << rl.y << ")) ";
+  os << "Площадь: " << area();
 }
 
 void Triangle::read(std::istream &is) {
-  is >> c.x >> c.y >> side;
+  double x, y;
 
-  if (!is || side <= 0)
-    throw std::invalid_argument("Ошибка: неправильный ввод");
+  is >> x >> y;
+  ll = Point{x, y};
+
+  is >> x >> y;
+  u = Point{x, y};
+
+  is >> x >> y;
+  rl = Point{x, y};
+
+  if (!isValidTriangle())
+    throw std::invalid_argument(
+        "Введены неправильные координаты вершин треугольника");
+}
+
+bool Triangle::isValidTriangle() const {
+  double a = distance(ll, u);
+  double b = distance(u, rl);
+  double c = distance(rl, ll);
+
+  // Проверка треугольного неравенства
+  return a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && c + a > b;
 }
 
 Figure *Triangle::clone() const { return new Triangle(*this); }

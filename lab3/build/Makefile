@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3
+CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -261,6 +261,30 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+src/array.o: src/array.cpp.o
+.PHONY : src/array.o
+
+# target to build an object file
+src/array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/src/array.cpp.o
+.PHONY : src/array.cpp.o
+
+src/array.i: src/array.cpp.i
+.PHONY : src/array.i
+
+# target to preprocess a source file
+src/array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/src/array.cpp.i
+.PHONY : src/array.cpp.i
+
+src/array.s: src/array.cpp.s
+.PHONY : src/array.s
+
+# target to generate assembly for a file
+src/array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/src/array.cpp.s
+.PHONY : src/array.cpp.s
 
 src/figure.o: src/figure.cpp.o
 .PHONY : src/figure.o
@@ -426,6 +450,9 @@ help:
 	@echo "... my_app"
 	@echo "... my_tests"
 	@echo "... mylib"
+	@echo "... src/array.o"
+	@echo "... src/array.i"
+	@echo "... src/array.s"
 	@echo "... src/figure.o"
 	@echo "... src/figure.i"
 	@echo "... src/figure.s"

@@ -3,13 +3,13 @@
 
 class Rectangle : public Figure {
 public:
-  Point c;
-  double width;
-  double height;
+  Point ll;
+  Point lu;
+  Point rl;
+  Point ru;
 
-  Rectangle() : c{0, 0}, width(1.0), height(1.0) {}
-  Rectangle(Point center_, double w_, double h_)
-      : c(center_), width(w_), height(h_) {}
+  Rectangle();
+  Rectangle(Point ll_, Point lu_, Point rl_, Point ru_);
 
   Point center() const override;
   double area() const override;
@@ -21,4 +21,8 @@ public:
   Rectangle(Rectangle &&) noexcept = default;
   Rectangle &operator=(const Rectangle &) = default;
   Rectangle &operator=(Rectangle &&) noexcept = default;
+
+private:
+  bool isValidRectangle() const;
+  double distance(const Point &a, const Point &b) const;
 };

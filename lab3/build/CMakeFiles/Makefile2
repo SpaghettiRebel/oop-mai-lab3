@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3
+CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -138,14 +138,14 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/mylib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=13,14,15,16,17 "Built target mylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target mylib"
 .PHONY : CMakeFiles/mylib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mylib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mylib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : CMakeFiles/mylib.dir/rule
 
 # Convenience name for target.
@@ -164,14 +164,14 @@ CMakeFiles/mylib.dir/clean:
 CMakeFiles/my_app.dir/all: CMakeFiles/mylib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=9,10 "Built target my_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=9,10 "Built target my_app"
 .PHONY : CMakeFiles/my_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/my_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : CMakeFiles/my_app.dir/rule
 
 # Convenience name for target.
@@ -192,14 +192,14 @@ CMakeFiles/my_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.
 CMakeFiles/my_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_tests.dir/build.make CMakeFiles/my_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_tests.dir/build.make CMakeFiles/my_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=11,12 "Built target my_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=11,12 "Built target my_tests"
 .PHONY : CMakeFiles/my_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/my_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : CMakeFiles/my_tests.dir/rule
 
 # Convenience name for target.
@@ -218,14 +218,14 @@ CMakeFiles/my_tests.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=1,2 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -245,14 +245,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -271,14 +271,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=5,6 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -297,14 +297,14 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

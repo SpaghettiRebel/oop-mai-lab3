@@ -1,14 +1,15 @@
 #include <iomanip>
 #include <iostream>
+#include <limits>
 #include <string>
-#include <vector>
 
+#include "array.hpp"
 #include "rectangle.hpp"
 #include "square.hpp"
 #include "triangle.hpp"
 
 int main() {
-  std::vector<Figure *> arr;
+  Array arr;
 
   std::cout << "Введите номер действия:\n"
             << "  1: добавить треугольник\n"
@@ -27,46 +28,60 @@ int main() {
 
     try {
       if (cmd == "1") {
-        std::cout << "Введите координаты центра треугольника и длину стороны: ";
+        std::cout << "Введите координаты треугольника: ";
         Triangle *t = new Triangle();
         std::cin >> *t;
+        if (!std::cin) {
+          delete t;
+          throw std::invalid_argument("Ошибка ввода треугольника");
+        }
         arr.push_back(t);
 
       } else if (cmd == "2") {
-        std::cout << "Введите координаты центра квадрата и длину стороны: ";
+        std::cout << "Введите координаты квадрата: ";
         Square *s = new Square();
         std::cin >> *s;
+        if (!std::cin) {
+          delete s;
+          throw std::invalid_argument("Ошибка ввода квадрата");
+        }
         arr.push_back(s);
 
       } else if (cmd == "3") {
-        std::cout
-            << "Введите координаты центра прямоугольника и длины стороны: ";
+        std::cout << "Введите координаты прямоугольника: ";
         Rectangle *r = new Rectangle();
         std::cin >> *r;
+        if (!std::cin) {
+          delete r;
+          throw std::invalid_argument("Ошибка ввода прямоугольника");
+        }
         arr.push_back(r);
 
       } else if (cmd == "p") {
-        for (size_t i = 0; i < arr.size(); ++i)
-          std::cout << i << ": " << *arr[i] << "\n";
+        arr.print(std::cout);
 
       } else if (cmd == "s") {
         double sum = 0.0;
-
-        for (auto f : arr)
-          sum += f->area();
-
+        for (std::size_t i = 0; i < arr.size(); ++i) {
+          Figure *f = arr[i];
+          if (f)
+            sum += f->area();
+        }
         std::cout << "  Суммарная площадь = " << sum << "\n";
 
       } else if (cmd == "d") {
         std::cout << "Введите индекс удаляемой фигуры (начиная с 0): ";
-        size_t idx;
+        std::size_t idx;
         std::cin >> idx;
 
-        if (idx >= arr.size())
+        if (!std::cin) {
+          std::cin.clear();
+          std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+          std::cout << "  Ошибка: неправильный ввод индекса\n";
+        } else if (idx >= arr.size()) {
           std::cout << "  Ошибка: неправильный индекс\n";
-        else {
-          delete arr[idx];
-          arr.erase(arr.begin() + idx);
+        } else {
+          arr.erase(idx);
         }
 
       } else if (cmd == "0") {
@@ -78,12 +93,9 @@ int main() {
     } catch (const std::exception &e) {
       std::cout << "Ошибка: " << e.what() << "\n";
       std::cin.clear();
-      std::string skip;
-      std::getline(std::cin, skip);
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
   }
 
-  for (auto p : arr)
-    delete p;
   return 0;
 }

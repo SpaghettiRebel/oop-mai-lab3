@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3
+CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/my_tests.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/my_tests.dir/progress.make
 include CMakeFiles/my_tests.dir/flags.make
 
 CMakeFiles/my_tests.dir/tests/test_main.cpp.o: CMakeFiles/my_tests.dir/flags.make
-CMakeFiles/my_tests.dir/tests/test_main.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/tests/test_main.cpp
+CMakeFiles/my_tests.dir/tests/test_main.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/tests/test_main.cpp
 CMakeFiles/my_tests.dir/tests/test_main.cpp.o: CMakeFiles/my_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_tests.dir/tests/test_main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_tests.dir/tests/test_main.cpp.o -MF CMakeFiles/my_tests.dir/tests/test_main.cpp.o.d -o CMakeFiles/my_tests.dir/tests/test_main.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/tests/test_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_tests.dir/tests/test_main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_tests.dir/tests/test_main.cpp.o -MF CMakeFiles/my_tests.dir/tests/test_main.cpp.o.d -o CMakeFiles/my_tests.dir/tests/test_main.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/tests/test_main.cpp
 
 CMakeFiles/my_tests.dir/tests/test_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_tests.dir/tests/test_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/tests/test_main.cpp > CMakeFiles/my_tests.dir/tests/test_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/tests/test_main.cpp > CMakeFiles/my_tests.dir/tests/test_main.cpp.i
 
 CMakeFiles/my_tests.dir/tests/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_tests.dir/tests/test_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/tests/test_main.cpp -o CMakeFiles/my_tests.dir/tests/test_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/tests/test_main.cpp -o CMakeFiles/my_tests.dir/tests/test_main.cpp.s
 
 # Object files for target my_tests
 my_tests_OBJECTS = \
@@ -96,9 +96,9 @@ bin/my_tests: lib/libmylib.a
 bin/my_tests: lib/libgtest_main.a
 bin/my_tests: lib/libgtest.a
 bin/my_tests: CMakeFiles/my_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/my_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/my_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_tests.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D TEST_TARGET=my_tests -D TEST_EXECUTABLE=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/bin/my_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=my_tests_TESTS -D CTEST_FILE=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/my_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+	/usr/bin/cmake -D TEST_TARGET=my_tests -D TEST_EXECUTABLE=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/bin/my_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=my_tests_TESTS -D CTEST_FILE=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/my_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/my_tests.dir/build: bin/my_tests
@@ -109,6 +109,6 @@ CMakeFiles/my_tests.dir/clean:
 .PHONY : CMakeFiles/my_tests.dir/clean
 
 CMakeFiles/my_tests.dir/depend:
-	cd /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles/my_tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles/my_tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/my_tests.dir/depend
 

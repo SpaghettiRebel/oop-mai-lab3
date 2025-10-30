@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3
+CMAKE_SOURCE_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mylib.dir/depend.make
@@ -69,64 +69,79 @@ include CMakeFiles/mylib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mylib.dir/flags.make
 
+CMakeFiles/mylib.dir/src/array.cpp.o: CMakeFiles/mylib.dir/flags.make
+CMakeFiles/mylib.dir/src/array.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/array.cpp
+CMakeFiles/mylib.dir/src/array.cpp.o: CMakeFiles/mylib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mylib.dir/src/array.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/array.cpp.o -MF CMakeFiles/mylib.dir/src/array.cpp.o.d -o CMakeFiles/mylib.dir/src/array.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/array.cpp
+
+CMakeFiles/mylib.dir/src/array.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylib.dir/src/array.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/array.cpp > CMakeFiles/mylib.dir/src/array.cpp.i
+
+CMakeFiles/mylib.dir/src/array.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylib.dir/src/array.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/array.cpp -o CMakeFiles/mylib.dir/src/array.cpp.s
+
 CMakeFiles/mylib.dir/src/figure.cpp.o: CMakeFiles/mylib.dir/flags.make
-CMakeFiles/mylib.dir/src/figure.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/figure.cpp
+CMakeFiles/mylib.dir/src/figure.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/figure.cpp
 CMakeFiles/mylib.dir/src/figure.cpp.o: CMakeFiles/mylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mylib.dir/src/figure.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/figure.cpp.o -MF CMakeFiles/mylib.dir/src/figure.cpp.o.d -o CMakeFiles/mylib.dir/src/figure.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/figure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mylib.dir/src/figure.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/figure.cpp.o -MF CMakeFiles/mylib.dir/src/figure.cpp.o.d -o CMakeFiles/mylib.dir/src/figure.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/figure.cpp
 
 CMakeFiles/mylib.dir/src/figure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylib.dir/src/figure.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/figure.cpp > CMakeFiles/mylib.dir/src/figure.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/figure.cpp > CMakeFiles/mylib.dir/src/figure.cpp.i
 
 CMakeFiles/mylib.dir/src/figure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylib.dir/src/figure.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/figure.cpp -o CMakeFiles/mylib.dir/src/figure.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/figure.cpp -o CMakeFiles/mylib.dir/src/figure.cpp.s
 
 CMakeFiles/mylib.dir/src/triangle.cpp.o: CMakeFiles/mylib.dir/flags.make
-CMakeFiles/mylib.dir/src/triangle.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/triangle.cpp
+CMakeFiles/mylib.dir/src/triangle.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/triangle.cpp
 CMakeFiles/mylib.dir/src/triangle.cpp.o: CMakeFiles/mylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mylib.dir/src/triangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/triangle.cpp.o -MF CMakeFiles/mylib.dir/src/triangle.cpp.o.d -o CMakeFiles/mylib.dir/src/triangle.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mylib.dir/src/triangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/triangle.cpp.o -MF CMakeFiles/mylib.dir/src/triangle.cpp.o.d -o CMakeFiles/mylib.dir/src/triangle.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/triangle.cpp
 
 CMakeFiles/mylib.dir/src/triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylib.dir/src/triangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/triangle.cpp > CMakeFiles/mylib.dir/src/triangle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/triangle.cpp > CMakeFiles/mylib.dir/src/triangle.cpp.i
 
 CMakeFiles/mylib.dir/src/triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylib.dir/src/triangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/triangle.cpp -o CMakeFiles/mylib.dir/src/triangle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/triangle.cpp -o CMakeFiles/mylib.dir/src/triangle.cpp.s
 
 CMakeFiles/mylib.dir/src/square.cpp.o: CMakeFiles/mylib.dir/flags.make
-CMakeFiles/mylib.dir/src/square.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/square.cpp
+CMakeFiles/mylib.dir/src/square.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/square.cpp
 CMakeFiles/mylib.dir/src/square.cpp.o: CMakeFiles/mylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mylib.dir/src/square.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/square.cpp.o -MF CMakeFiles/mylib.dir/src/square.cpp.o.d -o CMakeFiles/mylib.dir/src/square.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/square.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mylib.dir/src/square.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/square.cpp.o -MF CMakeFiles/mylib.dir/src/square.cpp.o.d -o CMakeFiles/mylib.dir/src/square.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/square.cpp
 
 CMakeFiles/mylib.dir/src/square.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylib.dir/src/square.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/square.cpp > CMakeFiles/mylib.dir/src/square.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/square.cpp > CMakeFiles/mylib.dir/src/square.cpp.i
 
 CMakeFiles/mylib.dir/src/square.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylib.dir/src/square.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/square.cpp -o CMakeFiles/mylib.dir/src/square.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/square.cpp -o CMakeFiles/mylib.dir/src/square.cpp.s
 
 CMakeFiles/mylib.dir/src/rectangle.cpp.o: CMakeFiles/mylib.dir/flags.make
-CMakeFiles/mylib.dir/src/rectangle.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/rectangle.cpp
+CMakeFiles/mylib.dir/src/rectangle.cpp.o: /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/rectangle.cpp
 CMakeFiles/mylib.dir/src/rectangle.cpp.o: CMakeFiles/mylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mylib.dir/src/rectangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/rectangle.cpp.o -MF CMakeFiles/mylib.dir/src/rectangle.cpp.o.d -o CMakeFiles/mylib.dir/src/rectangle.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/rectangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mylib.dir/src/rectangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mylib.dir/src/rectangle.cpp.o -MF CMakeFiles/mylib.dir/src/rectangle.cpp.o.d -o CMakeFiles/mylib.dir/src/rectangle.cpp.o -c /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/rectangle.cpp
 
 CMakeFiles/mylib.dir/src/rectangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mylib.dir/src/rectangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/rectangle.cpp > CMakeFiles/mylib.dir/src/rectangle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/rectangle.cpp > CMakeFiles/mylib.dir/src/rectangle.cpp.i
 
 CMakeFiles/mylib.dir/src/rectangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mylib.dir/src/rectangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/src/rectangle.cpp -o CMakeFiles/mylib.dir/src/rectangle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/src/rectangle.cpp -o CMakeFiles/mylib.dir/src/rectangle.cpp.s
 
 # Object files for target mylib
 mylib_OBJECTS = \
+"CMakeFiles/mylib.dir/src/array.cpp.o" \
 "CMakeFiles/mylib.dir/src/figure.cpp.o" \
 "CMakeFiles/mylib.dir/src/triangle.cpp.o" \
 "CMakeFiles/mylib.dir/src/square.cpp.o" \
@@ -135,13 +150,14 @@ mylib_OBJECTS = \
 # External object files for target mylib
 mylib_EXTERNAL_OBJECTS =
 
+lib/libmylib.a: CMakeFiles/mylib.dir/src/array.cpp.o
 lib/libmylib.a: CMakeFiles/mylib.dir/src/figure.cpp.o
 lib/libmylib.a: CMakeFiles/mylib.dir/src/triangle.cpp.o
 lib/libmylib.a: CMakeFiles/mylib.dir/src/square.cpp.o
 lib/libmylib.a: CMakeFiles/mylib.dir/src/rectangle.cpp.o
 lib/libmylib.a: CMakeFiles/mylib.dir/build.make
 lib/libmylib.a: CMakeFiles/mylib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library lib/libmylib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library lib/libmylib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/mylib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mylib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -154,6 +170,6 @@ CMakeFiles/mylib.dir/clean:
 .PHONY : CMakeFiles/mylib.dir/clean
 
 CMakeFiles/mylib.dir/depend:
-	cd /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/CMakeFiles/mylib.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3 /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/CMakeFiles/mylib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mylib.dir/depend
 

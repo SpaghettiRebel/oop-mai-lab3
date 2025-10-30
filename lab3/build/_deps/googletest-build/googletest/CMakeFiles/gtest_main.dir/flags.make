@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/lab3/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/Вячеслав/Desktop/oop/lab3/oop-mai-lab3/lab3/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 

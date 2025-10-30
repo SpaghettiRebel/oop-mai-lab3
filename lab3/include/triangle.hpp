@@ -4,11 +4,12 @@
 
 class Triangle : public Figure {
 public:
-  Point c;
-  double side;
+  Point ll;
+  Point u;
+  Point rl;
 
-  Triangle() : c{0, 0}, side(1.0) {}
-  Triangle(Point center_, double side_) : c(center_), side(side_) {}
+  Triangle();
+  Triangle(Point ll_, Point u_, Point rl_);
 
   Point center() const override;
   double area() const override;
@@ -20,4 +21,8 @@ public:
   Triangle(Triangle &&) noexcept = default;
   Triangle &operator=(const Triangle &) = default;
   Triangle &operator=(Triangle &&) noexcept = default;
+
+private:
+  bool isValidTriangle() const;
+  double distance(const Point &a, const Point &b) const;
 };
